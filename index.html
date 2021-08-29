@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .material-icons.md-36 { font-size: 36px; }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        a {
+            display: inline-block;
+            padding: 5px;
+            margin: 0 5px;
+            font-size: 14px;
+            font-family: arial,sans-serif;
+            color: #222;
+            text-decoration: none;
+        }
+
+        .signin-button {
+            cursor: pointer;
+            color: #fff;
+            text-decoration: none;
+            background: #2b7de9;
+            box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
+            margin-left: 8px;
+            border: 1px solid transparent;
+            font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.25px;
+            line-height: 16px;
+            margin-left: 10px;
+            margin-right: 8px;
+            min-width: 96px;
+            padding: 9px 23px;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .apps-button {
+            color: #000;
+            cursor: pointer;
+            text-decoration: none;
+            opacity: 1;
+            background-position: -64px -29px;
+            background-color: rgba(60,64,67,0.08);
+            outline: none;
+            border-radius: 50%;
+            padding: 8px;
+            box-sizing: border-box;
+            height: 40px;
+            width: 40px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        
+        .search-input {
+            background-color: transparent;
+            padding: 0;
+            color: rgba(0,0,0,.87);
+            word-wrap: break-word;
+            outline: none;
+            margin-top: -37px;
+            height: 34px;
+            font-size: 16px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+
+        .search-buttons {
+            box-shadow: 0 1px 1px rgba(0,0,0,.1);
+            background-color: #f8f9fa;
+            border: 1px solid #dadce0;
+            color: #202124;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            border-radius: 4px;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+
+
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .search-items 
+        {
+            height: 700px;
+            text-align:center; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+            <div style="float:right">
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><button class="apps-button"><span class="material-icons">&#xe5c3;</span></button></li>
+                <li><a class="signin-button">Sign In</a></li>
+            </div>
+        </ul>
+        <div class="search-items">
+            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+            <input class="search-input" type="text"></input>
+            <button class="search-buttons" type="submit">Google Search</button>
+            <button class="search-buttons" type="submit">I'm Feeling Lucky</button>
+        </div>
+        <ul>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search works</a></li>
+            <li ><a href="#">Carbon neutral since 2007</a></li>
+            <div style="float:right">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </div>                
+        </ul>
+    </body>
+</html>
