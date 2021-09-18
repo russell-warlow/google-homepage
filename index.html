@@ -3,16 +3,6 @@
     <style>
         .material-icons.md-36 { font-size: 36px; }
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            float: left;
-        }
-
         a {
             display: inline-block;
             padding: 5px;
@@ -73,9 +63,7 @@
             height: 34px;
             font-size: 16px;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 10px;
+            margin-top: 25px;
         }
 
         .search-buttons {
@@ -92,60 +80,85 @@
             text-align: center;
             border-radius: 4px;
             display: inline-block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 10px;
+            margin-top: 25px;
         }
 
-
-        .logo {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .search-items 
-        {
-            height: 700px;
-            text-align:center; 
+        .header {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+        }
+
+        .page-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
             align-items: center;
         }
 
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+        }
 
+        .footer-start {
+            display: flex;
+            justify-content: flex-start;
+            min-width: 30%;
+        }
+
+        .footer-end {
+            display: flex;
+            justify-content: flex-end;
+            min-width: 30%;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     </style>
 
     <head>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Store</a></li>
-            <div style="float:right">
-                <li><a href="#">Gmail</a></li>
-                <li><a href="#">Images</a></li>
-                <li><button class="apps-button"><span class="material-icons">&#xe5c3;</span></button></li>
-                <li><a class="signin-button">Sign In</a></li>
+        <div class="header">
+            <div>
+                <a href="#">About</a>
+                <a href="#">Store</a>
             </div>
-        </ul>
-        <div class="search-items">
-            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-            <input class="search-input" type="text"></input>
-            <button class="search-buttons" type="submit">Google Search</button>
-            <button class="search-buttons" type="submit">I'm Feeling Lucky</button>
+            <div>
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <button class="apps-button"><span class="material-icons">&#xe5c3;</span></button>
+                <a class="signin-button">Sign In</a>
+            </div>
         </div>
-        <ul>
-            <li><a href="#">Advertising</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">How Search works</a></li>
-            <li ><a href="#">Carbon neutral since 2007</a></li>
-            <div style="float:right">
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Settings</a></li>
+        <div class="page-body">
+            <div>
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+            </div>
+            <input class="search-input" type="text"></input>
+            <div>
+                <button type="submit" class="search-buttons">Google Search</button>
+                <button type="submit" class="search-buttons">I'm Feeling Lucky</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-start">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+            <a href="#">Carbon neutral since 2007</a>
+            <div class="footer-end">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
             </div>                
-        </ul>
+        </div>
     </body>
 </html>
